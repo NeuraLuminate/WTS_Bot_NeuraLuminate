@@ -14,6 +14,8 @@ Original file is located at
 # google-generativeai
 # gunicorn
 
+import requests
+
 import sqlite3
 
 # Conectar a la base de datos
