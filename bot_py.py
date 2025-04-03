@@ -82,10 +82,10 @@ insertar_varios_servicios(servicios_a_insertar)
 requests.post(
     "https://waba.360dialog.io/v1/configs/webhook",
     headers={
-        "D360-API-KEY": API_KEY_360,
+        "D360-API-KEY": "1h0BqZCBsONxZWfP4sAoOALLAK",
         "Content-Type": "application/json"
     },
-    json={"url": public_url.public_url + "/webhook"} # Access the public_url attribute
+
 )
 
 import os
@@ -128,7 +128,7 @@ import sqlite3
 import datetime
 
 # Configurar Gemini AI
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+genai.configure(api_key=os.getenv("AIzaSyDBHS8DuGYlO7gtvWHYp6XAIJAyGi2WFUk"))
 modelo = genai.GenerativeModel("gemini-pro")
 
 app = Flask(__name__)
